@@ -6,16 +6,16 @@
 
   <p-megaMenu [model]="items"></p-megaMenu>
 
-
-
+  
   <p-dataTable [value]="carros" [rows]="5" [paginator]="true" [pageLinks]="3" [responsive]="true"
-   [rowsPerPageOptions]="[5,10,20]">
+   [rowsPerPageOptions]="[5,10,20]" selectionMode="single" dataKey="id" [(selection)]="selectedCar1">
     <p-header>List of Cars</p-header>
+    <p-footer><div style="text-align: left">Selected Car: {{selectedCar1 ? selectedCar1.id + ' - ' + selectedCar1.marca + ' - ' + selectedCar1.modelo + ' - ' + selectedCar1.valor: ''}}</div></p-footer>
     <p-column field="id" header="Id"></p-column>
     <p-column field="marca" header="Marca"></p-column>
     <p-column field="modelo" header="Modelo"></p-column>
     <p-column field="combustivel" header="Combustivel"></p-column>
-    <p-column field="motor" header="Modelo"></p-column>
+    <p-column field="motor" header="Motor"></p-column>
     <p-column field="valor" header="Valor" [sortable]="true"></p-column>
   </p-dataTable>
 
