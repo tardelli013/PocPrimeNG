@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+
+  <p-megaMenu [model]="items"></p-megaMenu>
+
+
+
+  <p-dataTable [value]="carros" [rows]="5" [paginator]="true" [pageLinks]="3" [responsive]="true"
+   [rowsPerPageOptions]="[5,10,20]">
+    <p-header>List of Cars</p-header>
+    <p-column field="id" header="Id"></p-column>
+    <p-column field="marca" header="Marca"></p-column>
+    <p-column field="modelo" header="Modelo"></p-column>
+    <p-column field="combustivel" header="Combustivel"></p-column>
+    <p-column field="motor" header="Modelo"></p-column>
+    <p-column field="valor" header="Valor" [sortable]="true"></p-column>
+  </p-dataTable>
+
+
+</div>
+
+
