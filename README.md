@@ -6,9 +6,11 @@ Testando funcionalidades e componentes do Prime NG
 
 necessario ja ter instalado @angular/cli e npm
 
-npm install primeng --save
-npm install font-awesome --save
-
+baixar as dependencias
+npm install
 
 rodar com 
 ng serve
+
+video de um dos criadores do prime ng
+https://www.youtube.com/watch?v=6OMyylh-uSQ
